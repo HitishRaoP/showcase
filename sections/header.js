@@ -7,7 +7,7 @@ const navItems = [
 
 function generateNavItems() {
   const navList = document.getElementById("nav-list");
-  navItems.forEach((item, index) => {
+  navItems.forEach((item) => {
     const li = document.createElement("li");
     li.setAttribute("role", "none");
     const a = document.createElement("a");

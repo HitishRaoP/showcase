@@ -26,7 +26,8 @@ function generateContactLinks() {
   if (!contactList) return;
   contactLinks.forEach((link) => {
     const listItem = document.createElement("li");
-    listItem.className = "flex flex-col items-start sm:flex-row justify-between py-2";
+    listItem.className =
+      "flex flex-col items-start sm:flex-row justify-between py-2";
     listItem.setAttribute("role", "listitem");
     const platformSpan = document.createElement("span");
     platformSpan.textContent = link.platform;
