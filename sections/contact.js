@@ -27,8 +27,10 @@ function generateContactLinks() {
   contactLinks.forEach((link) => {
     const listItem = document.createElement("li");
     listItem.className = "flex flex-col items-start sm:flex-row justify-between py-2";
+    listItem.setAttribute("role", "listitem");
     const platformSpan = document.createElement("span");
     platformSpan.textContent = link.platform;
+    platformSpan.className = "font-medium";
     const linkElement = document.createElement("a");
     linkElement.href = link.url;
     linkElement.textContent = link.url;
@@ -36,6 +38,7 @@ function generateContactLinks() {
       "text-blue-400 hover:text-blue-300 underline transition-colors text-sm sm:text-base";
     linkElement.target = "_blank";
     linkElement.rel = "noopener noreferrer";
+    linkElement.setAttribute("aria-label", `Visit my ${link.platform} profile`);
     listItem.appendChild(platformSpan);
     listItem.appendChild(linkElement);
     contactList.appendChild(listItem);

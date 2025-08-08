@@ -3,38 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hitish Rao P - Software Engineer Portfolio. View my work experience, projects, and get in touch." />
+    <meta name="author" content="Hitish Rao P" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="sections/header.js"></script>
     <script src="sections/contact.js"></script>
     <script src="sections/work.js"></script>
     <script src="sections/projects.js"></script>
     <script src="sections/education.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <title>Hitish Rao P</title>
   </head>
   <body class="bg-black text-white/70 inter-400">
-    <header class="grid">
-      <nav class="grid-content">
-        <ul id="nav-list" class="flex items-center gap-4"></ul>
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded z-50">
+      Skip to main content
+    </a>
+    <header class="grid" role="banner">
+      <nav class="grid-content" role="navigation" aria-label="Main navigation">
+        <ul id="nav-list" class="flex items-center gap-4" role="menubar"></ul>
       </nav>
     </header>
-    <main>
-      <section id="#" class="grid">
+    <main id="main-content" role="main">
+      <section id="hero" class="grid" aria-labelledby="hero-heading">
         <div class="grid-content">
           <div class="flex flex-col items-start">
             <div class="flex-shrink-0">
               <div
                 class="w-32 h-32 rounded-full bg-gray-800 border-2 border-white/20 flex items-center justify-center overflow-hidden mb-6"
+                role="img"
+                aria-label="Profile picture of Hitish Rao P"
               >
                 <img
                   src="assets/profile.jpg"
-                  alt="Hitish Rao P"
+                  alt="Hitish Rao P - Software Engineer"
                   class="w-full h-full object-cover rounded-full"
+                  loading="eager"
                 />
               </div>
             </div>
             <div class="flex-1">
-              <h1>Hey, I'm Hitish</h1>
+              <h1 id="hero-heading">Hey, I'm Hitish</h1>
               <p>
                 I'm a software engineer who builds reliable, scalable software.
                 I enjoy roles that combine design with development, creating
@@ -45,32 +53,32 @@
           </div>
         </div>
       </section>
-      <section id="education" class="grid">
+      <section id="education" class="grid" aria-labelledby="education-heading">
         <div class="grid-content">
-          <h1>Education</h1>
-          <div id="education-content"></div>
+          <h2 id="education-heading">Education</h2>
+          <div id="education-content" role="region" aria-label="Education details"></div>
         </div>
       </section>
-      <section id="work" class="grid">
+      <section id="work" class="grid" aria-labelledby="work-heading">
         <div class="grid-content">
-          <h1>Work Experience</h1>
-          <ul id="work-list"></ul>
+          <h2 id="work-heading">Work Experience</h2>
+          <ul id="work-list" role="list" aria-label="Work experience timeline"></ul>
         </div>
       </section>
-      <section id="projects" class="grid">
+      <section id="projects" class="grid" aria-labelledby="projects-heading">
         <div class="grid-content">
-          <h1>Projects</h1>
-          <ul id="projects-list"></ul>
+          <h2 id="projects-heading">Projects</h2>
+          <ul id="projects-list" role="list" aria-label="Project portfolio"></ul>
         </div>
       </section>
-      <section id="contact" class="grid">
+      <section id="contact" class="grid" aria-labelledby="contact-heading">
         <div class="grid-content">
-          <h1>Let's Connect</h1>
+          <h2 id="contact-heading">Let's Connect</h2>
           <p class="mb-6">
             If you want to get in touch with me about something or just to say
             hi, reach out on social media or send me an email.
           </p>
-          <ul id="contact-list" class="space-y-2"></ul>
+          <ul id="contact-list" class="space-y-2" role="list" aria-label="Contact information and social links"></ul>
         </div>
       </section>
     </main>

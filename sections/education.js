@@ -15,6 +15,7 @@ function generateEducationSection() {
   institutionLink.textContent = educationData.institution;
   institutionLink.target = '_blank';
   institutionLink.rel = 'noopener noreferrer';
+  institutionLink.setAttribute('aria-label', `Visit ${educationData.institution} website`);
   const degreeDuration = document.createElement('p');
   degreeDuration.className = 'text-white/60 text-sm sm:text-base';
   degreeDuration.textContent = `${educationData.degree} (${educationData.duration})`;
