@@ -19,6 +19,10 @@ const contactLinks = [
     platform: "Instagram",
     url: "https://www.instagram.com/HitishRaoP",
   },
+  {
+    platform: "Cal.com",
+    url: "https://cal.com/hitishraop/30min",
+  },
 ];
 
 function generateContactLinks() {
