@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Mono:wght@100..900&display=swap");
 
-/* Screen reader only class */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -42,6 +41,7 @@
 .grid {
   width: 100%;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.162);
+  position: relative;
 }
 
 .grid-content {
@@ -51,6 +51,67 @@
   border-left: 1px dashed rgba(255, 255, 255, 0.162);
   border-right: 1px dashed rgba(255, 255, 255, 0.162);
   padding: 1.5rem 1.5rem;
+  position: relative;
+}
+
+.grid-content::before {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 0;
+  background: none;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.grid-content::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background: none;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.grid::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: calc((100% - min(100%, 800px)) / 2);
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.663);
+  z-index: 100;
+  pointer-events: none;
+}
+
+.grid::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: calc((100% - min(100%, 800px)) / 2);
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 18px;
+  background-color: rgba(255, 255, 255, 0.663);
+  z-index: 100;
+  pointer-events: none;
+}
+
+.grid.no-corner::before,
+.grid.no-corner::after {
+  content: none !important;
+}
+
+@media (max-width: 768px) {
+  .grid::before { width: 14px; }
+  .grid::after  { height: 14px; }
 }
 
 h1,h2 {
