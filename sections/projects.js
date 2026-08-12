@@ -1,5 +1,27 @@
 const projects = [
   {
+    title: "Cursent",
+    description: "AI - Native Document Editor",
+    technologies: [
+      "MERN",
+      "Typescript",
+      "Cloudflare Workers",
+      "Monorepo",
+    ],
+    githubUrl: "https://github.com/HitishRaoP/cursent",
+    deployedUrl: "https://cursent.com",
+  },
+  {
+    title: "Nodespec",
+    description: "Freelancing agency",
+    technologies: [
+      "MERN",
+      "Typescript",
+    ],
+    githubUrl: "https://github.com/HitishRaoP/nodespec",
+    deployedUrl: "https://nodespec.in",
+  },
+  {
     title: "Instapark",
     description: "Airbnb for parking with repo having more than 25k LOC",
     technologies: [
@@ -10,7 +32,6 @@ const projects = [
       "Monorepo",
     ],
     githubUrl: "https://github.com/instaparkin/instapark",
-    deployedUrl: "https://instapark.in",
   },
   {
     title: "Rolt",

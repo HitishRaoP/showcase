@@ -1,16 +1,16 @@
-const workExperience = [
+const pors = [
   {
     company: "CodeIO",
     role: "Vice President",
-    duration: "Jan. 2025 - current",
+    duration: "Jan 2025 - Aug 2025",
     url: "https://www.linkedin.com/company/codeio-bmsce/",
   },
 ];
 
-function generateWorkExperience() {
-  const workList = document.getElementById("work-list");
-  if (!workList) return;
-  workExperience.forEach((job) => {
+function generatepors() {
+  const porList = document.getElementById("por-list");
+  if (!porList) return;
+  pors.forEach((job) => {
     const listItem = document.createElement("li");
     listItem.setAttribute("role", "listitem");
     const companyLink = document.createElement("a");
@@ -29,8 +29,8 @@ function generateWorkExperience() {
     roleDuration.textContent = `${job.role} (${job.duration})`;
     listItem.appendChild(companyLink);
     listItem.appendChild(roleDuration);
-    workList.appendChild(listItem);
+    porList.appendChild(listItem);
   });
 }
 
-document.addEventListener("DOMContentLoaded", generateWorkExperience);
+document.addEventListener("DOMContentLoaded", generatepors);
