@@ -1,5 +1,5 @@
 const navItems = [
-  { text: "Home", href: "#hero" },
+  { text: "About", href: "#about" },
   { text: "Work", href: "#work" },
   { text: "Projects", href: "#projects" },
   { text: "Contact", href: "#contact" },
