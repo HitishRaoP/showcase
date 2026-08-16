@@ -1,0 +1,11 @@
+# Crawl policy for the public portfolio site.
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /sections/
+Allow: /styles/
+Disallow: /.git/
+Disallow: /.agents/
+Disallow: /.codex/
+
+Sitemap: https://hitishraop.github.io/showcase/sitemap.xml
