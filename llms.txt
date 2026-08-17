@@ -1,0 +1,23 @@
+# Hitish Rao P
+
+> Personal portfolio of Hitish Rao P, a software engineer focused on web applications, thoughtful interfaces, reliable systems, and maintainable code.
+
+## Portfolio
+
+- [Home](https://showcase-340.pages.dev/): About Hitish, education, leadership experience, projects, and contact details.
+
+## Projects
+
+- Cursent: AI-native document editor built with MERN, TypeScript, Cloudflare Workers, and a monorepo architecture.
+- Nodespec: Freelancing agency built with MERN and TypeScript.
+- Instapark: Parking marketplace project built with MERN, TypeScript, GraphQL, microservices, and a monorepo architecture.
+- Rolt: Deployment platform inspired by Vercel, using MERN, TypeScript, Kubernetes, Terraform, SQS, and Lambda.
+- Quickview: AI YouTube video summarizer built with Next.js, Redis, TypeScript, and Stripe.
+- Medblocks: Patient-management system using Next.js, PGLite, TypeScript, and shadcn/ui, with cross-tab synchronization.
+
+## Contact
+
+- [GitHub](https://github.com/HitishRaoP)
+- [LinkedIn](https://www.linkedin.com/in/HitishRaoP)
+- [X](https://x.com/HitishRaoP)
+- Email: hitishraop@gmail.com
